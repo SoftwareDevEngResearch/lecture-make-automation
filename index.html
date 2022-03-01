@@ -421,7 +421,7 @@
                 RESULTS=$(patsubst data/%.txt,results/%.csv,$(DATA))
     
                 ## all : regenerate paper and all results.
-                all : $(PAPER) $(RESULTS)
+                all : paper.pdf $(RESULTS)
     
                 ## results/%.csv : regenerate result for any book.
                 results/%.csv : data/%.txt $(COUNT)
